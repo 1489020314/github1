@@ -14,24 +14,17 @@ import HelloWorld from '@/components/HelloWorld'
 import One from '@/page/one'
 import Two from '@/page/two'
 
-import siyi from '@/index/siyi'
-import sier from '@/index/sier'
 import two from '@/page/two'
 import one from '@/page/one'
 
 export default new VueRouter ({
 	routes: [
 		{
-			path: '/hello-world',
-			component: HelloWorld,
-			children: [
+			path: '/hello-world', component: HelloWorld, children: [
 				{
-					path: 'one',
-					component: One,
-				},
-				{
-					path: 'two',
-					component: Two,
+					path: 'one', component: One,
+				}, {
+					path: 'two', component: Two,
 				},
 			],
 		},
